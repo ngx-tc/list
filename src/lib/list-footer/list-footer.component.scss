@@ -1,0 +1,11 @@
+:host {
+  border-top: var(--tc-list-border-width) var(--tc-list-border-type) var(--tc-list-border-color);
+  display: block;
+  padding: var(--tc-list-item-padding-vertical) 0 0;
+
+  .tc-list.bordered & {
+    padding-left: var(--tc-list-item-padding-horizontal);
+    padding-right: var(--tc-list-item-padding-horizontal);
+    padding-bottom: var(--tc-list-item-padding-vertical);
+  }
+}

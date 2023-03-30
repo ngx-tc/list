@@ -1,0 +1,9 @@
+<div class="tc-list-item-wrap">
+  <div *ngIf="icon" class="tc-list-item-icon {{ icon }}"></div>
+
+  <tc-avatar *ngIf="avatar" [src]="avatar" [size]="avatarSize" class="tc-list-item-avatar"></tc-avatar>
+
+  <div class="tc-list-item-content">
+    <ng-content></ng-content>
+  </div>
+</div>

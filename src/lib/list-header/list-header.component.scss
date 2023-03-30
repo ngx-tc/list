@@ -1,0 +1,17 @@
+:host {
+  border-bottom: var(--tc-list-border-width) var(--tc-list-border-type) var(--tc-list-border-color);
+  display: block;
+  font-family: var(--tc-list-header-ff);
+  line-height: var(--tc-list-header-lh);
+  padding: 0 0 var(--tc-list-item-padding-vertical);
+
+  &.font-styled {
+    font-size: var(--tc-list-header-fs);
+    font-weight: var(--tc-list-header-fw);
+  }
+  .tc-list.bordered & {
+    padding-left: var(--tc-list-item-padding-horizontal);
+    padding-right: var(--tc-list-item-padding-horizontal);
+    padding-top: var(--tc-list-item-padding-vertical);
+  }
+}

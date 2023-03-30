@@ -1,0 +1,54 @@
+@use 'sass:math';
+@import '@ngx-tc/base/src/assets/scss/base.scss';
+
+:host {
+  --tc-list-fs: var(--tc-base-fs);
+  --tc-list-ff: var(--tc-base-ff);
+  --tc-list-fw: var(--tc-base-fw);
+  --tc-list-lh: var(--tc-base-lh);
+  --tc-list-module-rem: var(--tc-base-module-rem);
+  --tc-list-bg: inherit;
+  --tc-list-border-width: 0;
+  --tc-list-border-color: var(--tc-color-primary);
+  --tc-list-border-type: solid;
+  --tc-list-color: inherit;
+  --tc-list-shape: var(--tc-base-shape);
+  --tc-list-item-padding-horizontal: #{calc(var(--tc-list-module-rem) * 2)};
+  --tc-list-item-padding-vertical: #{var(--tc-list-module-rem)};
+  --tc-list-header-fs: 1.2em;
+  --tc-list-header-ff: inherit;
+  --tc-list-header-fw: 700;
+  --tc-list-header-lh: inherit;
+  --tc-list-icon-bg: #{rgba(#000,.1)};
+
+  background: var(--tc-list-bg);
+  border: var(--tc-list-border-width) var(--tc-list-border-type) var(--tc-list-border-color);
+  border-radius: var(--tc-list-shape);
+  color: var(--tc-list-color);
+  display: block;
+  font-family: var(--tc-list-ff);
+  font-size: var(--tc-list-fs);
+  font-weight: var(--tc-list-fw);
+  line-height: var(--tc-list-lh);
+  text-align: var(--tc-list-align);
+
+  .tc-list-header {
+    border-bottom: var(--tc-list-border-width) var(--tc-list-border-type) var(--tc-list-border-color);
+    font-family: var(--tc-list-header-ff);
+    font-size: var(--tc-list-header-fs);
+    font-weight: var(--tc-list-header-fw);
+    line-height: var(--tc-list-header-lh);
+    padding: var(--tc-list-item-padding-vertical) 0;
+  }
+  .tc-list-footer {
+    border-top: var(--tc-list-border-width) var(--tc-list-border-type) var(--tc-list-border-color);
+    padding: var(--tc-list-item-padding-vertical) 0;
+  }
+  &.bordered {
+    .tc-list-header,
+    .tc-list-footer {
+      padding-left: var(--tc-list-item-padding-horizontal);
+      padding-right: var(--tc-list-item-padding-horizontal);
+    }
+  }
+}

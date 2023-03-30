@@ -1,0 +1,23 @@
+{
+  "name": "@ngx-tc/list",
+  "version": "0.0.1",
+  "author": "type0code",
+  "license": "MIT",
+  "description": "Angular UI list component library",
+  "keywords": ["angular", "angular UI", "angular components", "ng", "ngx", "angular custom list", "angular list", "list"],
+  "repository": "https://github.com/ngx-tc/list",
+  "homepage": "http://tc-library.type-code.pro/#/components/list",
+  "config": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "@angular/common": "^15.1.0",
+    "@angular/core": "^15.1.0",
+    "@ngx-tc/base": "^0.0.17",
+    "@ngx-tc/avatar": "^0.0.7"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false
+}
