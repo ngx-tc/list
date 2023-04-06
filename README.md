@@ -1,4 +1,4 @@
-# About
+## About
 
 @ngx-tc/list is an Angular library that provides developers with an easy way to create lists in their applications. The library includes a set of customizable and reusable components that can be used to create lists of items such as menus, navigation items, or any other type of list-based content.
 
@@ -16,18 +16,18 @@ npm install @ngx-tc/list
 
 Import `TcListModule` e.g. in your `app.module.ts`:
 ```typescript
-import { MatListModule } from '@angular/material/list';
-import { NgxListSearchModule } from 'ngx-list-search';
+import { TcListModule } from '@ngx-tc/list';
+
 @NgModule({
   imports: [
     ...
-      TcListModule
+    TcListModule
   ],
 })
 export class AppModule {}
 ```
 
-Use the `@ngx-tc/list` component in you app:
+Use the `tc-list` component in you app:
 ```html
 <tc-list>
   <tc-list-item>Item 1</tc-list-item>
@@ -38,4 +38,4 @@ Use the `@ngx-tc/list` component in you app:
 
 ## Demo
 To view a working demo of the library in action, please follow the provided link. The demo will allow you to explore the various components and features included in @ngx-tc/list and see how they can be used to create powerful and responsive list-based interfaces in your Angular applications.
-[http://tc-library.type-code.pro/#/components/list](http://tc-library.type-code.pro/#/components/list)
+[http://tc-library.type-code.pro/#/components/lists](http://tc-library.type-code.pro/#/components/lists)
